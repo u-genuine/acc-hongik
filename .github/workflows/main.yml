@@ -1,4 +1,4 @@
-name: ACC Hongik
+name: "Release Health Check"
 
 on: 
   schedule:
