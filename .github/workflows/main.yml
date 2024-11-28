@@ -9,7 +9,7 @@ jobs:
   healthcheck:
     runs-on: ubuntu-22.04
     steps:
-      - name: Release API Health Check
+      - name: Release API Health Check
         uses: jtalk/url-health-check-action@v3
         with: 
           url: ${{ secrets.RELEASE_URI }}
@@ -21,7 +21,7 @@ jobs:
         with:
           status: ${{ job.status }}
           author_name: Health-Check
-          fields: repo, message, commit, action, eventName, ref, workflow, job, took
+          fields: repo,message,commit, action, eventName, ref, workflow, job, took
           github_token: ${{ secrets.ACCESS_TOKEN_GIT }}
 
         env:
