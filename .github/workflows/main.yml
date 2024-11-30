@@ -1,10 +1,5 @@
 name: "Release Health Check"
 
-on: 
-  schedule:
-    - cron: "0 */2 * * *"
-  workflow_dispatch:
-
 jobs:
   healthcheck:
     runs-on: ubuntu-22.04
